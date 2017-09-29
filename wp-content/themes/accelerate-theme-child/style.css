@@ -11,11 +11,14 @@
 */
 
 @import url("../accelerate-theme/style.css"); 
-.home-page {
-    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
- }
+
 
 .home-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+ } 
+
+.home-page {
+  background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
   margin: 0;
 }
 
@@ -84,24 +87,51 @@
   margin-top: 1em;
 }
 
- .blog-post h4 {
-    font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
-    color: #a6a6a6;
-    text-transform: uppercase;
-    margin: 2em 0 1em;
-    text-align: left;
+.blog-post h4 {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #a6a6a6;
+  text-transform: uppercase;
+  margin: 2em 0 1em;
+  text-align: left;
   }
 
-  .blog-post h3 {
+.blog-post h3 {
   font-size: 1.5em;
   }
   
-  .read-more-link {
+.read-more-link {
   font-family: 'Montserrat';
   font-weight: 600;
   color: #45ac9d;
   text-transform: uppercase;
   }
+
+.twitter-link {
+  margin-bottom: 2em;
+  margin-top: 2.4em;
+  margin-left: 1.5em;
+  padding: .5em 2em 0 2em;
+  }
+
+.twitter-link h3 {
+  color: #a6a6a6;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding-left: 1em;
+}
+
+.twitter-link li {
+  list-style: none;
+}
+
+
+.follow-us-link {
+  font-family: 'Montserrat';
+  color: #45ac9d;
+  font-weight: 600;
+  padding-left: 1.2em;
+  text-transform: uppercase;
+}
 
 /* Case Studies Page*/
 
@@ -119,6 +149,7 @@ aside.case-study-sidebar h2 {
   font-weight: 500;
   font-size: 25px;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 aside.case-study-sidebar h4 {
@@ -146,9 +177,9 @@ div.case-study-images {
 }
 
 div.case-study-images img {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   border: 1px solid #dddddd;
-   width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -210,7 +241,244 @@ div.case-study-images img {
     display: inline;
   }
 }
+
+@media (min-width: 768px) {
+.contact-main-content {
+    flex-grow: 1;
+ }
+}
 /* End NEXT / PREV STYLES */
 
+/*CONTACT PAGE*/
 
+#nf-field-4.ninja-forms-field.nf-element {
+  background: #45ac9d;
+  float: right;
+  padding:0 5em;
+  letter-spacing: 1px;
+}
+
+#nf-field-1,
+#nf-field-2,
+#nf-field-3 {
+  background: #ffffff;
+  border: 2px solid #c4c4c4;
+  color: black;
+}
+
+/* for name email message text .nf-field-label {
+  
+}*/
+
+.contact-main-content  {
+  padding: 0 6em 0 6em;
+
+}
+
+.contact-main-content h2 {
+  font-size: 1.5em;
+}
+
+
+.contact-main-content p {
+  font-size: 1.15em;
+}
+
+#nav-success {
+  padding-top: 2em;
+  color: #45ac9d;
+  font-weight: 700;
+}
+
+/*ABOUT PAGE*/
+
+.about {
+ margin: 0 2em;
+}
+
+.about-content {
+  padding-bottom: 1500px;
+  max-width: 1500px;
+}
+
+.about-main-content {
+  background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0); 
+  height: 420px;
+  padding: 6em 0;
+}
+
+.mission {
+  margin: 2em;
+  color: white;
+  margin: 5% 20% 0 20%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.6em;
+  line-height: 1.5em;
+}
+
+.about h3 {
+  margin-top: 2em;
+}
+
+.about h3,
+.about p {
+  text-align: center;
+  position: relative;
+  top: 6em;
+  font-weight: 400;
+}
+
+.about p {
+  padding-bottom: 5em;
+}
+
+.about-sidebar{
+  float: right;
+  width: 70%;
+  margin-top: 10px;
+  /*padding: 4em 2em;*/
+  clear: both;
+}
+
+.about-sidebar h2 {
+  font-weight: 500;
+  font-size: 1.5em;
+  padding-left: 3.7em;
+}
+
+.about-sidebar h6 {
+  font-weight: 300;
+  font-size: 1em;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding-right: 4em;
+  padding-left: 5em;
+}
+
+.about-images {
+  float: left;
+  width: 20%;
+  margin-top: 20px;
+  position: relative;
+  top: 1.2em;
+  left: 8em;
+}
+
+.about-sidebar-2 {
+  float: left;
+  width: 75%;
+  margin-top: 20px;
+  padding: 1em 2em 0 7em;
+  clear: both;
+}
+
+.about-sidebar-2 h2 {
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-top: .5em;
+  padding-left: 1em;
+}
+
+.about-sidebar-2 h6 {
+  font-weight: 300;
+  font-size: 1em;
+  margin-top: 10px;
+  padding-left: 1.5em;
+  padding-right: 2em;
+  text-align: justify;
+}
+
+.about-images-2 {
+  float: right;
+  width: 25%;
+  margin-top: 3em;  
+}
+
+.about-contact {
+  border-top: 1px solid #bfbfbf;
+  text-align: center;
+  /*clear: both;*/
+  padding: 20px 140px 20px 90px;
+  margin-top: 4em;
+  margin-bottom: 60px;
+}
+
+.about-contact h2 {
+  float: left;
+  display: inline-block;
+  margin: 30px 20px 20px 60px;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+
+.about-contact a {
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 80px;
+  margin-left: .25em;
+  float: right;
+}
+
+.about-contact button {
+  padding: 10px 75px;
+}
+
+a.button {
+  font-weight: 500;
+}
+
+/*404 PAGE*/
+
+.missing-sidebar {
+  background: url("img/cat-face.jpg") no-repeat scroll right center rgba(0, 0, 0, 0.8);
+  margin-top: 0;
+  width: 100%;
+}
+
+.missing {
+ /* padding-bottom: 100px; */
+ }  
+
+.missing-sidebar h1 {
+  color: #fff;
+  font-size: 150px;
+  text-align: right;
+  margin-top: 0;
+  padding-right: 1em;
+}
+
+.missing-sidebar h2 {
+  color: #fff;
+  font-size: 2.5em;
+  margin-top: 0;
+  padding-right: 1em;
+  text-align: right;
+  position: relative;
+  bottom: 2.5em;
+}
+
+.missing-sidebar p {
+  text-align: right;
+  font-size: 1.2em;
+  color: #fff;
+  font-weight: 700;
+  padding-right: 1.1em;
+  position: relative;
+  bottom: 6em;
+  /*position: relative;
+  top: 8em;
+  font-size: 1.1em; */
+}
+
+.missing-sidebar span {
+  color: #404040;
+  font-weight: 700;
+}
+
+/* Mailchimp Sidebar */
+.mailchimp-button input {
+  background: #45ac9d;
+  padding-top: .6em;
+}
 

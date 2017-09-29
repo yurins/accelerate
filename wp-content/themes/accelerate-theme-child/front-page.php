@@ -48,7 +48,7 @@ get_header(); ?>
 
 <section class="recent-posts">
  <div class="site-content"> <!--site-content-->
-  <div class="blog-post">
+   <div class="blog-post">
     <h4>From the Blog</h4>
      <?php query_posts('posts_per_page=1'); ?>
      <?php while ( have_posts() ) : the_post(); ?>
@@ -56,7 +56,13 @@ get_header(); ?>
       <?php the_excerpt(); ?> 
      <?php endwhile; ?> 
     <?php wp_reset_query(); ?>
-  </div>
+  </div><!--blog post left-->
+  
+   <?php if ( is_active_sidebar( 'sidebar-2' ) ) : ?>
+   <div id="secondary" class="widget-area twitter-link" role="complementary">
+    <?php dynamic_sidebar( 'sidebar-2' ); ?>
+    <p class="follow-us-link"><a href="https://twitter.com/Skillcrush">Follow Us &rsaquo;</a></p>
+    <?php endif; ?>
  </div>
 </section>
 

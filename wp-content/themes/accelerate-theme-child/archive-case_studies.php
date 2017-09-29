@@ -16,7 +16,7 @@ get_header(); ?>
 
   <div id="primary" class="site-content">
     <div class="main-content" role="main">
-      <?php query_posts($query_string.'&order=ASC'); ?>
+      <?php query_posts($query_string.'&order=ASC');  ?>
        <?php while ( have_posts() ) : the_post();
         $services = get_field('services');
         $image_1 = get_field('image_1');
